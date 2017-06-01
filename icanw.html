@@ -1,0 +1,1031 @@
+<html>
+  <head>
+        <!-- var options = {};
+        options.colorAxis = {colors: ['#e31b23', 'yellow', '#00853f']};
+        options.datalessRegionColor = 'black';
+        options.tooltip = {
+            isHtml: true
+        };
+        var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
+
+        chart.draw(data, options);
+      } -->
+      <style type="text/css">
+          .google-visualization-tooltip {
+            max-width: 400px;
+          }
+      </style>
+  </head>
+  <body>
+    <script src="http://www.google.com/jsapi"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.min.js"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1.1', {packages: ['geochart'], callback: drawVisualization});
+
+        var data = [
+          {
+            "country": "Afghanistan*",
+            "reason": "Afghanistan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Albania",
+            "reason": "Albania voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Algeria*",
+            "reason": "Algeria voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences. It was the site of French nuclear testing in the 1960s.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Andorra*",
+            "reason": "Andorra voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations, and in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Angola*",
+            "reason": "Angola co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Antigua & Barbuda*",
+            "reason": "Antigua and Barbuda voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Argentina*",
+            "reason": "Argentina voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Armenia*",
+            "reason": "Armenia abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Australia",
+            "reason": "Australia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. In 2016 it attempted to derail a special UN working group on nuclear disarmament in Geneva, which adopted a report recommending the start of negotiations on a prohibition treaty. Australia claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall. Australia was the site of British nuclear testing in the 1950s and 1960s.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Austria*",
+            "reason": "Austria co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process. In 2014 it hosted the third intergovernmental conference on the humanitarian impact of nuclear weapons, at which it launched a pledge, subsequently endorsed by 127 nations, to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Azerbaijan*",
+            "reason": "Azerbaijan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bahamas*",
+            "reason": "The Bahamas co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bahrain*",
+            "reason": "Bahrain voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bangladesh*",
+            "reason": "Bangladesh voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Barbados*",
+            "reason": "Barbados voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Belarus",
+            "reason": "Belarus abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Belgium",
+            "reason": "Belgium, which hosts US nuclear weapons on its territory, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Belize",
+            "reason": "Belize co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Benin*",
+            "reason": "Benin did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bhutan",
+            "reason": "Bhutan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bolivia*",
+            "reason": "Bolivia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bosnia & Herzegovina",
+            "reason": "Bosnia and Herzegovina voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Botswana*",
+            "reason": "Botswana voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Brazil*",
+            "reason": "Brazil co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process, and has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Brunei*",
+            "reason": "Brunei voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Bulgaria",
+            "reason": "Bulgaria voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Burkina Faso*",
+            "reason": "Burkina Faso voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Burundi*",
+            "reason": "Burundi co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Cabo Verde*",
+            "reason": "Cabo Verde co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Cambodia*",
+            "reason": "Cambodia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Cameroon*",
+            "reason": "Cameroon voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Canada",
+            "reason": "Canada voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Central African Republic",
+            "reason": "The Central African Republic voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Chad*",
+            "reason": "Chad voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Chile*",
+            "reason": "Chile co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "China",
+            "reason": "China, which possesses approximately 260 nuclear weapons, abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. Although it regularly declares its support for the prohibition and elimination of nuclear weapons, its true commitment to nuclear disarmament remains in serious doubt. It has failed to fulfil its legally binding disarmament obligations under the Non-Proliferation Treaty.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Colombia*",
+            "reason": "Colombia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Comoros*",
+            "reason": "Comoros voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Congo*",
+            "reason": "Congo voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Costa Rica*",
+            "reason": "Costa Rica co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Côte d’Ivoire*",
+            "reason": "Côte d’Ivoire voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Croatia",
+            "reason": "Croatia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Cuba*",
+            "reason": "Cuba voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Cyprus*",
+            "reason": "Cyprus voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Czech Republic",
+            "reason": "The Czech Republic voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Denmark",
+            "reason": "Denmark voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall. However, in the past it has called for intensified efforts to outlaw nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Djibouti*",
+            "reason": "Djibouti voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Dominica*",
+            "reason": "Dominica voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Dominican Republic*",
+            "reason": "The Dominican Republic co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "DRC (Congo)*",
+            "reason": "The Democratic Republic of the Congo co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Ecuador*",
+            "reason": "Ecuador co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Egypt*",
+            "reason": "Egypt co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "El Salvador*",
+            "reason": "El Salvador co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Equatorial Guinea*",
+            "reason": "Equatorial Guinea voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Eritrea",
+            "reason": "Eritrea voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Estonia",
+            "reason": "Estonia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Ethiopia*",
+            "reason": "Ethiopia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Fiji",
+            "reason": "Fiji co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Finland",
+            "reason": "Finland abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It regularly aligns itself with nations that claim that US nuclear weapons are essential for their security.",
+            "support": "Unclear"
+          },
+          {
+            "country": "France",
+            "reason": "France, which possesses approximately 300 nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has declared its strong opposition to such a treaty, and has failed to fulfil its legally binding disarmament obligations under the Non-Proliferation Treaty. On the opening day of negotiations, it held an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Gabon",
+            "reason": "Gabon voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Gambia",
+            "reason": "The Gambia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Georgia",
+            "reason": "Georgia did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Germany",
+            "reason": "Germany, which hosts US nuclear weapons on its territory, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Ghana*",
+            "reason": "Ghana voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Greece",
+            "reason": "Greece voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Grenada*",
+            "reason": "Grenada co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Guatemala*",
+            "reason": "Guatemala co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Guinea*",
+            "reason": "Guinea voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Guinea-Bissau",
+            "reason": "Guinea-Bissau co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Guyana*",
+            "reason": "Guyana voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Haiti*",
+            "reason": "Haiti did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Holy See*",
+            "reason": "The Holy see has expressed support for a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Honduras*",
+            "reason": "Honduras co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Hungary",
+            "reason": "Hungary voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Iceland",
+            "reason": "Iceland voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security. However, in the past it has called for intensified efforts to outlaw nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "India",
+            "reason": "India, which possesses approximately 110 to 120 nuclear weapons, abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. Although it regularly declares its support for the prohibition and elimination of nuclear weapons, its true commitment to nuclear disarmament remains in serious doubt.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Indonesia*",
+            "reason": "Indonesia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Iran*",
+            "reason": "Iran voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Iraq*",
+            "reason": "Iraq voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Ireland*",
+            "reason": "Ireland co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process, and has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Israel",
+            "reason": "Israel, which possesses approximately 80 nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Italy",
+            "reason": "Italy, which hosts US nuclear weapons on its territory, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Jamaica*",
+            "reason": "Jamaica co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Japan*",
+            "reason": "Japan, which is the only nation ever to be attacked with nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security. It attended the opening session of the negotiations in March, but only to declare that it would be unable to negotiate constructively and in good faith.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Jordan*",
+            "reason": "Jordan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Kazakhstan*",
+            "reason": "Kazakhstan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences. From the 1940s to 1980s, it was the site of Soviet nuclear testing.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Kenya*",
+            "reason": "Kenya co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Kiribati",
+            "reason": "Kiribati voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences. It was the site of British nuclear testing in the 1950s and US nuclear testing in the 1960s.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Kuwait*",
+            "reason": "Kuwait voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Kyrgyzstan",
+            "reason": "Kyrgyzstan abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Laos*",
+            "reason": "Laos voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Latvia",
+            "reason": "Latvia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Lebanon*",
+            "reason": "Lebanon voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Lesotho*",
+            "reason": "Lesotho voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Liberia*",
+            "reason": "Liberia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Libya*",
+            "reason": "Libya co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Liechtenstein*",
+            "reason": "Liechtenstein co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Lithuania",
+            "reason": "Lithuania voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Luxembourg",
+            "reason": "Luxembourg voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Macedonia*",
+            "reason": "Macedonia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Madagascar",
+            "reason": "Madagascar voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Malawi*",
+            "reason": "Malawi co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Malaysia*",
+            "reason": "Malaysia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Maldives*",
+            "reason": "The Maldives voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Mali",
+            "reason": "Mali abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Malta*",
+            "reason": "Malta co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Marshall Islands*",
+            "reason": "The Marshall Islands co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences. In 2014 it initiated proceedings in the International Court of Justice against the nine nuclear-armed nations, with the aim of compelling them to fulfil their legally binding disarmament obligations. The Marshall Islands was the site of US nuclear testing in the 1940s and 1950s.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Mauritania*",
+            "reason": "Mauritania co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Mauritius*",
+            "reason": "Mauritius voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Mexico*",
+            "reason": "Mexico co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process, and it has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences. In 2014 it hosted the second intergovernmental conference on the humanitarian impact of nuclear weapons, at which the Mexican chair concluded that a diplomatic process must be launched for the prohibition of nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Micronesia",
+            "reason": "The Federated States of Micronesia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It was the only Pacific island state to do so, citing its military relationship with the United States as the reason.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Moldova*",
+            "reason": "The Republic of Moldova did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Monaco*",
+            "reason": "Monaco voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Mongolia*",
+            "reason": "Mongolia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Montenegro",
+            "reason": "Montenegro voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Morocco*",
+            "reason": "Morocco abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Mozambique*",
+            "reason": "Mozambique voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Myanmar*",
+            "reason": "Myanmar voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Namibia*",
+            "reason": "Namibia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Nauru",
+            "reason": "Nauru co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Nepal*",
+            "reason": "Nepal voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Netherlands*",
+            "reason": "The Netherlands, which hosts US nuclear weapons on its territory, abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It was the only member of the North Atlantic Treaty Organization to do so. The rest voted against the resolution. It has expressed qualified support for a prohibition treaty. It is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "New Zealand*",
+            "reason": "New Zealand co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Nicaragua*",
+            "reason": "Nicaragua abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It was the only Latin American nation to do so. However, it is participating in the negotiations, and in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Niger*",
+            "reason": "Niger voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Nigeria*",
+            "reason": "Nigeria co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process, and has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "North Korea",
+            "reason": "North Korea, which is in the process of developing nuclear weapons, voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, its true commitment to disarmament remains in serious doubt. In 2003 it announced its withdrawal from the Non-Proliferation Treaty, and has since carried out multiple nuclear test explosions.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Norway",
+            "reason": "Norway voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security. However, in the past it has called for intensified efforts to outlaw nuclear weapons in light of their unacceptable humanitarian consequences. In 2013, it hosted the first intergovernmental conference on the humanitarian impact of nuclear weapons.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Oman*",
+            "reason": "Oman voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Pakistan",
+            "reason": "Pakistan, which possesses approximately 120 to 130 nuclear weapons, abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it has declared its strong opposition to such a treaty.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Palau",
+            "reason": "Palau co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Palestine*",
+            "reason": "Palau has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Panama*",
+            "reason": "Panama co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Papua New Guinea*",
+            "reason": "Papua New Guinea co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Paraguay*",
+            "reason": "Paraguay co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Peru*",
+            "reason": "Peru co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Philippines*",
+            "reason": "The Philippines co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Poland",
+            "reason": "Poland voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Portugal",
+            "reason": "Portugal voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Qatar*",
+            "reason": "Qatar voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Romania",
+            "reason": "Romania voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Russia",
+            "reason": "Russia, which possesses approximately 7,000 nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has declared its strong opposition to such a treaty, and has failed to fulfil its legally binding disarmament obligations under the Non-Proliferation Treaty.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Rwanda",
+            "reason": "Rwanda voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Saint Kitts and Nevis",
+            "reason": "Saint Kitts and Nevis voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Saint Lucia",
+            "reason": "Saint Lucia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Saint Vincent & the Grenadines*",
+            "reason": "Saint Vincent and the Grenadines co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Samoa",
+            "reason": "Samoa co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "San Marino*",
+            "reason": "San Marino co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "São Tomé & Principe",
+            "reason": "São Tomé and Principe did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Saudi Arabia*",
+            "reason": "Saudi Arabia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Senegal*",
+            "reason": "Senegal voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Serbia",
+            "reason": "Serbia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Seychelles",
+            "reason": "The Seychelles did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Sierra Leone*",
+            "reason": "Sierra Leone co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Singapore*",
+            "reason": "Singapore voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Slovakia",
+            "reason": "Slovakia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Slovenia",
+            "reason": "Slovenia voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Solomon Islands*",
+            "reason": "The Solomon Islands voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Somalia*",
+            "reason": "Somalia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "South Africa*",
+            "reason": "South Africa co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It is a member of the core group of nations leading this treaty-making process, and has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "South Korea",
+            "reason": "South Korea voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "South Sudan*",
+            "reason": "South Sudan did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Spain",
+            "reason": "Spain voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Sri Lanka*",
+            "reason": "Sri Lanka co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Sudan*",
+            "reason": "Sudan abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations, and in 2015 it pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Suriname",
+            "reason": "Suriname voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Swaziland*",
+            "reason": "Swaziland co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Sweden*",
+            "reason": "Sweden voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Switzerland*",
+            "reason": "Switzerland abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has expressed qualified support for a prohibition treaty. It is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Syria*",
+            "reason": "Syria did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Tajikistan*",
+            "reason": "Tajikistan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Tanzania*",
+            "reason": "Tanzania voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Thailand*",
+            "reason": "Thailand co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Timor-Leste*",
+            "reason": "Timor-Leste voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Togo*",
+            "reason": "Togo voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Tonga*",
+            "reason": "Tonga voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Trinidad & Tobago*",
+            "reason": "Trinidad and Tobago co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Tunisia*",
+            "reason": "Tunisia voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Turkey",
+            "reason": "Turkey, which hosts US nuclear weapons on its territory, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It claims that US nuclear weapons are essential for its security, and has refused to declare that nuclear weapons should never be used again, under any circumstances. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Turkmenistan",
+            "reason": "Turkmenistan voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Tuvalu",
+            "reason": "Tuvalu co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Uganda*",
+            "reason": "Uganda voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Ukraine",
+            "reason": "Ukraine did not participate in the vote on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. On the opening day of negotiations, it joined an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "United Arab Emirates*",
+            "reason": "The United Arab Emirates voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "United Kingdom",
+            "reason": "The United Kingdom, which possesses approximately 215 nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has declared its strong opposition to such a treaty, and has failed to fulfil its legally binding disarmament obligations under the Non-Proliferation Treaty. On the opening day of negotiations, it held an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "United States",
+            "reason": "The United States, which possesses approximately 6,800 nuclear weapons, voted against the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has declared its strong opposition to such a treaty, and has failed to fulfil its legally binding disarmament obligations under the Non-Proliferation Treaty. On the opening day of negotiations, it held an anti-ban protest outside the UN General Assembly hall.",
+            "support": "Not supportive"
+          },
+          {
+            "country": "Uruguay*",
+            "reason": "Uruguay co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Uzbekistan*",
+            "reason": "Uzbekistan abstained from voting on the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. However, it is participating in the negotiations.",
+            "support": "Unclear"
+          },
+          {
+            "country": "Vanuatu*",
+            "reason": "Vanuatu voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Venezuela*",
+            "reason": "Venezuela co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Viet Nam*",
+            "reason": "Viet Nam co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Yemen*",
+            "reason": "Yemen voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Zambia*",
+            "reason": "Zambia co-sponsored the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          },
+          {
+            "country": "Zimbabwe*",
+            "reason": "Zimbabwe voted in favour of the UN resolution to begin negotiations in 2017 on a treaty prohibiting nuclear weapons. It has pledged to cooperate in efforts to stigmatize, prohibit and eliminate nuclear weapons in light of their unacceptable humanitarian consequences.",
+            "support": "Supportive"
+          }
+        ];
+        
+        var allCountries = [];
+        allCountries.push(['Country', 'Value', {role: 'tooltip', p:{html:true}}]);
+
+        data.forEach(function(country){
+
+            var support = country.support == "Supportive" ? 1 : country.support == "Not supportive" ? -1 : 0;
+            country.reason = "<b>" + country.support + "</b> - " + country.reason;
+            allCountries.push([country.country.replace("*", ""), support, country.reason]);
+        })
+
+        function drawVisualization() {
+            
+            var data = google.visualization.arrayToDataTable(allCountries);
+            var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
+
+            chart.draw(data, {
+                magnifyingGlass : {enable: true, zoomFactor: 7.5},
+                colorAxis : { colors: ['#e31b23', 'yellow', '#00853f']},
+                datalessRegionColor : 'black',
+                legend: 'none',
+                tooltip: {
+                    isHtml: true
+                }
+            });
+        }
+    </script>
+    <div id="visualization" style="width: 100%; height: 100%;"></div>
+  </body>
+</html>
