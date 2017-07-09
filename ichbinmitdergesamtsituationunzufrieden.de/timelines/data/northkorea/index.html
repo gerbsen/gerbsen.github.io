@@ -41,9 +41,11 @@
       data.events.forEach(function(event) {
 
         if (!('text' in event.text)) 
-          event.text.text = "";
+          event.text.text = "<br>";
+        else
+          event.text.text += "<br><br>";
 
-        var link = "<br><a href=\"" + event.url + "\">" + event.linkText + "</a>";
+        var link = "<a href=\"" + event.url + "\">" + event.linkText + "</a>";
 
         event.text.text += link;
       });
