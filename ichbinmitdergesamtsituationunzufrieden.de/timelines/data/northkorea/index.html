@@ -37,6 +37,17 @@
     <script src="timeline.js"></script>
     <script src="data.js"></script>
     <script>
+      
+      data.events.forEach(function(event) {
+
+        if (!('text' in event.text)) 
+          event.text.text = "";
+
+        var link = "<br><a href=\"" + event.url + "\">" + event.linkText + "</a>";
+
+        event.text.text += link;
+      });
+
       var google = { ga_property_id: "UA-27829802-4" };
       var timeline = new TL.Timeline('timeline', data);
     </script>

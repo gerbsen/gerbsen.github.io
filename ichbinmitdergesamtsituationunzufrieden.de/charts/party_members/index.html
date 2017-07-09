@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Mitglieder deutscher Parteien</title>
+    <script src="Chart.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <style>
+        canvas{
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        #chartjs-tooltip {
+            opacity: 1;
+            position: absolute;
+            background: rgba(0, 0, 0, .7);
+            color: white;
+            border-radius: 3px;
+            -webkit-transition: all .1s ease;
+            transition: all .1s ease;
+            pointer-events: none;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+        }
+
+        .chartjs-tooltip-key {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+        }
+        
+        .graph {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:100%; height: 100%">
+        <div class="graph">
+            <canvas id="canvas"></canvas>    
+        </div>
+        
+        <p style="text-align: center;">
+            Quellen: <br/>
+            <a style="color: black;" href="mailto:oskar.niedermayer@fu-berlin.de">Prof. Dr. Oskar Niedermayer</a>, Otto-Stammer-Zentrum, Freie Universität Berlin<br/>
+            <a style="color: black;" target="_blank" href="http://www.tagesspiegel.de/politik/parteien-in-deutschland-afd-gewinnt-rund-4000-mitglieder-hinzu/19184670.html">Tagesspiegel</a>
+        </p>
+    </div>
+    
+    <script>
+
+        window.chartColors = {
+            red: 'rgb(255, 99, 132)',
+            orange: 'rgb(255, 159, 64)',
+            yellow: 'rgb(255, 205, 86)',
+            green: 'rgb(75, 192, 192)',
+            blue: 'rgb(54, 162, 235)',
+            purple: 'rgb(153, 102, 255)',
+            grey: 'rgb(201, 203, 207)'
+        };
+
+        Chart.defaults.global.pointHitDetectionRadius = 1;
+
+        var customTooltips = function(tooltip) {
+            // Tooltip Element
+            var tooltipEl = document.getElementById('chartjs-tooltip');
+
+            if (!tooltipEl) {
+                tooltipEl = document.createElement('div');
+                tooltipEl.id = 'chartjs-tooltip';
+                tooltipEl.innerHTML = "<table></table>"
+                this._chart.canvas.parentNode.appendChild(tooltipEl);
+            }
+
+            // Hide if no tooltip
+            if (tooltip.opacity === 0) {
+                tooltipEl.style.opacity = 0;
+                return;
+            }
+
+            // Set caret Position
+            tooltipEl.classList.remove('above', 'below', 'no-transform');
+            if (tooltip.yAlign) {
+                tooltipEl.classList.add(tooltip.yAlign);
+            } else {
+                tooltipEl.classList.add('no-transform');
+            }
+
+            function getBody(bodyItem) {
+                return bodyItem.lines;
+            }
+
+            // Set Text
+            if (tooltip.body) {
+                var titleLines = tooltip.title || [];
+                var bodyLines = tooltip.body.map(getBody);
+
+                var innerHtml = '<thead>';
+
+                titleLines.forEach(function(title) {
+                    innerHtml += '<tr><th>' + title + '</th></tr>';
+                });
+                innerHtml += '</thead><tbody>';
+
+                bodyLines.forEach(function(body, i) {
+                    var colors = tooltip.labelColors[i];
+                    var style = 'background:' + colors.backgroundColor;
+                    style += '; border-color:' + colors.borderColor;
+                    style += '; border-width: 2px'; 
+                    var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
+                    innerHtml += '<tr><td>' + span + body + '</td></tr>';
+                });
+                innerHtml += '</tbody>';
+
+                var tableRoot = tooltipEl.querySelector('table');
+                tableRoot.innerHTML = innerHtml;
+            }
+
+            var positionY = this._chart.canvas.offsetTop;
+            var positionX = this._chart.canvas.offsetLeft;
+
+            // Display, position, and set styles for font
+            tooltipEl.style.opacity = 1;
+            tooltipEl.style.left = positionX + tooltip.caretX + 'px';
+            tooltipEl.style.top = positionY + tooltip.caretY + 'px';
+            tooltipEl.style.fontFamily = tooltip._fontFamily;
+            tooltipEl.style.fontSize = tooltip.fontSize;
+            tooltipEl.style.fontStyle = tooltip._fontStyle;
+            tooltipEl.style.padding = tooltip.yPadding + 'px ' + tooltip.xPadding + 'px';
+        };
+
+        var years = [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016];
+
+        var cdu = [789609, 751163, 713846, 685343, 671497, 657643, 645786, 631700, 626342, 638056, 616722, 604135, 594391, 587244, 579526, 571881, 553896, 536668, 528972, 521149, 505314, 489896, 476347, 467076, 457488, 444400, 434019];
+        var spd = [943402, 919871, 885958, 861480, 849374, 817650, 792773, 776183, 775036, 755066, 734667, 717513, 693894, 650798, 605807, 590485, 561239, 539861, 520970, 512520, 502062, 489638, 477037, 473662, 459902, 442814, 445000];
+        var csu = [186198, 184513, 181758, 177289, 176250, 179647, 178573, 178457, 178755, 183569, 181021, 177661, 177705, 176989, 172892, 170117, 166928, 166392, 162232, 159198, 153890, 150585, 147965, 148380, 146536, 144360, 143000];
+        var fdp = [168217, 140031, 103505, 94197, 87992, 80431, 75038, 69621, 67897, 64407, 62721, 64063, 66560, 65192, 64146, 65022, 64880, 64078, 65600, 72116, 68541, 63123, 58675, 57263, 54967, 53197, 53800];
+        var green = [41316, 38873, 36320, 39761, 43899, 46410, 48034, 48980, 51812, 49488, 46631, 44053, 43881, 44052, 44322, 45105, 44677, 44320, 45089, 48171, 52991, 59074, 59653, 61359, 60329, 59418, 60791];
+        var left = [280882, 172579, 146742, 131406, 123751, 114940, 105029, 98624, 94627, 88594, 83475, 77845, 70805, 65753, 61385, 61270, 60338, 71711, 75968, 78046, 73658, 69458, 63761, 63756, 60551, 58989, 58645];
+        var afd = [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 17687, 20728, 16385, 26000];
+
+        var all = new Array(years.length).fill(0);        
+        years.forEach(function(year, index){
+            
+            all[index] += cdu[index];
+            all[index] += spd[index];
+            all[index] += csu[index];
+            all[index] += fdp[index];
+            all[index] += green[index];
+            all[index] += left[index];
+
+            if ( !isNaN(afd[index]) ) {
+
+                all[index] += afd[index];
+            } 
+        });
+
+		var config = {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: [{
+                    label: "Alle Parteien",
+                    data: all,
+                    borderColor: "blue",
+                    backgroundColor: 'blue',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone',
+                    hidden : true
+                },{
+                    label: "CDU",
+                    data: cdu,
+                    borderColor: "black",
+					backgroundColor: 'black',
+                    fill: false,
+					cubicInterpolationMode: 'monotone'
+                },{
+                    label: "SPD",
+                    data: spd,
+                    borderColor: "red",
+                    backgroundColor: 'red',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                },{
+                    label: "CSU",
+                    data: csu,
+                    borderColor: "grey",
+                    backgroundColor: 'grey',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                },{
+                    label: "FDP",
+                    data: fdp,
+                    borderColor: "yellow",
+                    backgroundColor: 'yellow',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                },{
+                    label: "Grüne",
+                    data: green,
+                    borderColor: "green",
+                    backgroundColor: 'green',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                },{
+                    label: "Linke",
+                    data: left,
+                    borderColor: "#a80303",
+                    backgroundColor: '#a80303',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                },{
+                    label: "AfD",
+                    data: afd,
+                    borderColor: "#009ee0",
+                    backgroundColor: '#009ee0',
+                    fill: false,
+                    cubicInterpolationMode: 'monotone'
+                }]
+            },
+            options: {
+                responsive: true,
+                title:{
+                    display:true,
+                    text:'Anzahl der Mitglieder deutscher Parteien von 1990 bis 2016'
+                },
+                tooltips: {
+                    enabled: false,
+                    mode: 'index',
+                    position: 'nearest',
+                    custom: customTooltips
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Anzahl der Mitglieder'
+                        }
+                    }]
+                }
+            }
+        };
+
+        window.onload = function() {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myLine = new Chart(ctx, config);
+        };
+
+    </script>
+</body>
+
+</html>
+
