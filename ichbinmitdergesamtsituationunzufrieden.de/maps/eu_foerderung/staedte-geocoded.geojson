@@ -1,0 +1,4696 @@
+var staedte = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dresden, Stadt",
+                "desc": "Dresden, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7372621,
+                    51.0504088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leipzig, Stadt",
+                "desc": "Leipzig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3730747,
+                    51.3396955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chemnitz, Stadt",
+                "desc": "Chemnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9213697,
+                    50.827845
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zwickau, Stadt",
+                "desc": "Zwickau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4733725,
+                    50.7102169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Freiberg, Stadt, Universitätsstadt",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3417, 50.9128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zittau, Stadt",
+                "desc": "Zittau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8029971,
+                    50.8999681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bautzen, Stadt",
+                "desc": "Bautzen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4237749,
+                    51.182293
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Görlitz, Stadt",
+                "desc": "Görlitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.968707,
+                    51.1506269
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Plauen, Stadt",
+                "desc": "Plauen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.1368679,
+                    50.4976133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ebersbach-Neugersdorf, Stadt",
+                "desc": "Ebersbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5905346,
+                    51.0040105
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pirna, Stadt",
+                "desc": "Pirna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9419168,
+                    50.9625175
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Radebeul, Stadt",
+                "desc": "Radebeul, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6493707,
+                    51.1115648
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Coswig, Stadt",
+                "desc": "Coswig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5779228,
+                    51.130518
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Aue, Stadt",
+                "desc": "Aue, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.699016,
+                    50.5873296
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Meißen, Stadt",
+                "desc": "Meissen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4976592,
+                    51.1617842
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Limbach-Oberfrohna, Stadt",
+                "desc": "Limbach-Oberfrohna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7537198,
+                    50.8575662
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hoyerswerda, Stadt",
+                "desc": "Hoyerswerda, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2536419,
+                    51.4388605
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Annaberg-Buchholz, Stadt",
+                "desc": "Annaberg-Buchholz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0075835,
+                    50.578587
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Freital, Stadt",
+                "desc": "Freital, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6512413,
+                    51.0008667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dippoldiswalde, Stadt",
+                "desc": "01744 Dippoldiswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6684411,
+                    50.8951322
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Crimmitschau, Stadt",
+                "desc": "Crimmitschau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3906771,
+                    50.8173491
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Borna, Stadt",
+                "desc": "Borna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4923222,
+                    51.1245977
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Riesa, Stadt",
+                "desc": "Riesa, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2677004,
+                    51.3117871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Radeberg, Stadt",
+                "desc": "Radeberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9142216,
+                    51.1129963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lengenfeld, Stadt",
+                "desc": "Lengenfeld, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3709924,
+                    50.5701252
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Grimma, Stadt",
+                "desc": "04668 Grimma, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7202313,
+                    51.2364426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Werdau, Stadt",
+                "desc": "Werdau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3751839,
+                    50.7288716
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Torgau, Stadt",
+                "desc": "Torgau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.991583,
+                    51.557934
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Marienberg, Stadt",
+                "desc": "Marienberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1622883,
+                    50.6503661
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schwarzenberg/Erzgeb., Stadt",
+                "desc": "Schwarzenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7792228,
+                    50.5425641
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mittweida, Stadt, Hochschulstadt",
+                "desc": "Technikumpl. 17, 09648 Mittweida, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9730216,
+                    50.9874599
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großenhain, Stadt",
+                "desc": "Grossenhain, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.531304,
+                    51.2912275
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Löbau, Stadt",
+                "desc": "Löbau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6701781,
+                    51.0962292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Grünhainichen",
+                "desc": "Grünhainichen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.153333,
+                    50.7671893
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oelsnitz/Erzgeb., Stadt",
+                "desc": "Oelsnitz/Erzgebirge, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6992796,
+                    50.7254764
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bannewitz",
+                "desc": "Bannewitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7180333,
+                    50.9937813
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Brand-Erbisdorf, Stadt",
+                "desc": "Brand-Erbisdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3236602,
+                    50.8666883
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zwönitz, Stadt",
+                "desc": "Zwönitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8095151,
+                    50.6320683
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reichenbach im Vogtland, Stadt",
+                "desc": "Markt 6, 08468 Reichenbach im Vogtland, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3028313,
+                    50.6207671
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Olbernhau, Stadt",
+                "desc": "Olbernhau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3383108,
+                    50.6588625
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Auerbach/Vogtl., Stadt",
+                "desc": "Auerbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3981373,
+                    50.5079692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oelsnitz/Vogtl., Stadt",
+                "desc": "Oelsnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.1758073,
+                    50.4175985
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hohenstein-Ernstthal, Stadt",
+                "desc": "Hohenstein-Ernstthal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7132681,
+                    50.8009829
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Frankenberg/Sa., Stadt",
+                "desc": "Frankenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0404029,
+                    50.9090361
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wilthen, Stadt",
+                "desc": "Wilthen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3937128,
+                    51.0972728
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wilsdruff, Stadt",
+                "desc": "Wilsdruff, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5363349,
+                    51.0503651
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Meerane, Stadt",
+                "desc": "Meerane, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4637223,
+                    50.8472857
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Markersdorf",
+                "desc": "Markersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8846716,
+                    51.1457897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Glauchau, Stadt",
+                "desc": "Glauchau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5451713,
+                    50.8187761
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Gottleuba-Berggießhübel, Stadt",
+                "desc": "Bad Gottleuba-Berggießhübel, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9438949,
+                    50.854186
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kamenz, Stadt",
+                "desc": "Kamenz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.102488,
+                    51.2749068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eilenburg, Stadt",
+                "desc": "04838 Eilenburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.617702,
+                    51.4597557
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Glaubitz",
+                "desc": "01612 Glaubitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3765913,
+                    51.3207656
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Döbeln, Stadt",
+                "desc": "Döbeln, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1167196,
+                    51.1229322
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bischofswerda, Stadt",
+                "desc": "01877 Bischofswerda, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1842026,
+                    51.1252883
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zeithain",
+                "desc": "Zeithain, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.325208,
+                    51.3564772
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weißwasser/O.L., Stadt",
+                "desc": "Weißwasser, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6345926,
+                    51.5043518
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Waldheim, Stadt",
+                "desc": "Waldheim, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0057555,
+                    51.0770515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stollberg/Erzgeb., Stadt",
+                "desc": "Stollberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7750105,
+                    50.7091847
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sehmatal",
+                "desc": "Sehmatal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9740071,
+                    50.4809956
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neukirch/Lausitz",
+                "desc": "Neukirch/Lausitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3069437,
+                    51.0947498
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Markranstädt, Stadt",
+                "desc": "Markranstädt, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2211256,
+                    51.3046156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Krauschwitz",
+                "desc": "02957 Krauschwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7426882,
+                    51.5142078
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Heidenau, Stadt",
+                "desc": "Heidenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8661223,
+                    50.9758426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wilkau-Haßlau, Stadt",
+                "desc": "Wilkau-Haßlau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.514068,
+                    50.6713607
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schneeberg, Stadt",
+                "desc": "Schneeberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6386475,
+                    50.5954901
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ottendorf-Okrilla",
+                "desc": "Ottendorf-Okrilla, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8321542,
+                    51.1831331
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nossen, Stadt",
+                "desc": "Nossen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2948865,
+                    51.058317
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Klingenberg",
+                "desc": "01774 Klingenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5261046,
+                    50.8729949
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Grünhain-Beierfeld, Stadt",
+                "desc": "Grünhain-Beierfeld, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7979253,
+                    50.568063
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Delitzsch, Stadt",
+                "desc": "04509 Delitzsch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3380993,
+                    51.525574
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neustadt i. Sa., Stadt",
+                "desc": "Neustadt in Sachsen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2134443,
+                    51.0236392
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Penig, Stadt",
+                "desc": "Penig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7086346,
+                    50.9282392
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oschatz, Stadt",
+                "desc": "Oschatz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1059825,
+                    51.3006128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neukirchen/Erzgeb.",
+                "desc": "Neukirchen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8669392,
+                    50.7794338
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cunewalde",
+                "desc": "Cunewalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5208145,
+                    51.0983923
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schkeuditz, Stadt",
+                "desc": "Schkeuditz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2240071,
+                    51.3944697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ostrau",
+                "desc": "Ostrau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1639569,
+                    51.200641
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lichtenstein/Sa., Stadt",
+                "desc": "Lichtenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6271344,
+                    50.7548169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dohna, Stadt",
+                "desc": "Dohna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8582559,
+                    50.9565937
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sohland a. d. Spree",
+                "desc": "Sohland an der Spree, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4448329,
+                    51.050822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oederan, Stadt",
+                "desc": "Oederan, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1708803,
+                    50.8619895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niesky, Stadt",
+                "desc": "Niesky, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.831172,
+                    51.2931501
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Halsbrücke",
+                "desc": "Halsbrücke, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3476446,
+                    50.9549982
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Borsdorf",
+                "desc": "Borsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5431487,
+                    51.3482636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Seiffen/Erzgeb., Kurort",
+                "desc": "Seiffen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4525702,
+                    50.6484086
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Radeburg, Stadt",
+                "desc": "Radeburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7232666,
+                    51.2129606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niederwiesa",
+                "desc": "Niederwiesa, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0213789,
+                    50.8657204
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Markkleeberg, Stadt",
+                "desc": "Markkleeberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3664574,
+                    51.2748681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lauter-Bernsbach, Stadt",
+                "desc": "08315 Lauter-Bernsbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7381531,
+                    50.5634621
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Lausick, Stadt",
+                "desc": "Bad Lausick, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6450531,
+                    51.1449012
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taucha, Stadt",
+                "desc": "Taucha, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4950539,
+                    51.3798014
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stolpen, Stadt",
+                "desc": "Stolpen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.07632,
+                    51.0476337
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Regis-Breitingen, Stadt",
+                "desc": "Regis-Breitingen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4295509,
+                    51.0873666
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lommatzsch, Stadt",
+                "desc": "Lommatzsch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3081211,
+                    51.1953471
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Klipphausen",
+                "desc": "Klipphausen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5264011,
+                    51.0738358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Heinsdorfergrund",
+                "desc": "Heinsdorfergrund, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3720327,
+                    50.6202349
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "St. Egidien",
+                "desc": "Sankt Egidien, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6143912,
+                    50.7893273
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reinsdorf",
+                "desc": "Reinsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.55455,
+                    50.6975414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Königsbrück, Stadt",
+                "desc": "01936 Königsbrück, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8994289,
+                    51.2678455
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großrückerswalde",
+                "desc": "Großrückerswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1176699,
+                    50.6296993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fraureuth",
+                "desc": "Fraureuth, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3520009,
+                    50.7032324
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Treuen, Stadt",
+                "desc": "Treuen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2993698,
+                    50.5435567
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Scheibenberg, Stadt",
+                "desc": "Scheibenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9129742,
+                    50.5407967
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Moritzburg",
+                "desc": "Schloßallee, 01468 Moritzburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6794526,
+                    51.1676051
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großröhrsdorf, Stadt",
+                "desc": "Großröhrsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0226111,
+                    51.1437432
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großpostwitz/O.L.",
+                "desc": "Großpostwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4400087,
+                    51.1229611
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bernsdorf, Stadt",
+                "desc": "Bernsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0671249,
+                    51.3760276
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zschopau, Stadt",
+                "desc": "Zschopau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0745705,
+                    50.7474463
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wurzen, Stadt",
+                "desc": "Wurzen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7436557,
+                    51.3698806
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thalheim/Erzgeb., Stadt",
+                "desc": "Thalheim, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8474361,
+                    50.6991692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rötha, Stadt",
+                "desc": "Rötha, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4165728,
+                    51.1970127
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Roßwein, Stadt",
+                "desc": "Roßwein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1831464,
+                    51.0680587
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rochlitz, Stadt",
+                "desc": "09306 Rochlitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7944283,
+                    51.0506956
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oberlungwitz, Stadt",
+                "desc": "09353 Oberlungwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7238345,
+                    50.7864334
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nünchritz",
+                "desc": "Nünchritz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3899305,
+                    51.2992981
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lichtenau",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9914, 50.9061
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kottmar",
+                "desc": "Kottmar, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6616525,
+                    51.0179707
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jöhstadt, Stadt",
+                "desc": "Jöhstadt, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0930797,
+                    50.5130025
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hainichen, Stadt",
+                "desc": "Hainichen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1220989,
+                    50.9694542
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gröditz, Stadt",
+                "desc": "01609 Gröditz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4471558,
+                    51.4110818
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großschirma, Stadt",
+                "desc": "Großschirma, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3111495,
+                    50.9659275
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arnsdorf",
+                "desc": "Arnsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9905116,
+                    51.0944429
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thallwitz",
+                "desc": "Thallwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6839665,
+                    51.4323049
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mülsen",
+                "desc": "Mülsen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5776638,
+                    50.7402085
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mittelherwigsdorf",
+                "desc": "02763 Mittelherwigsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7643275,
+                    50.9217391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lugau/Erzgeb., Stadt",
+                "desc": "Lugau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7455103,
+                    50.7393032
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hartha, Stadt",
+                "desc": "Hartha, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9725862,
+                    51.0963335
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Schlema",
+                "desc": "Bad Schlema, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6711785,
+                    50.6050955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wolkenstein, Stadt",
+                "desc": "Wolkenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0703273,
+                    50.6558998
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sebnitz, Stadt",
+                "desc": "01855 Sebnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.273873,
+                    50.9709117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rabenau, Stadt",
+                "desc": "Rabenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6432545,
+                    50.964561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neusalza-Spremberg, Stadt",
+                "desc": "Neusalza-Spremberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5276013,
+                    51.0380155
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mühlau",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7654, 50.8996
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lößnitz, Stadt",
+                "desc": "Lößnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7296169,
+                    50.6194936
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lichtenberg/Erzgeb.",
+                "desc": "Lichtenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4218733,
+                    50.8339885
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leisnig, Stadt",
+                "desc": "Leisnig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.928458,
+                    51.1577198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Laußnitz",
+                "desc": "Laußnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8779912,
+                    51.2471038
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kriebstein",
+                "desc": "Kriebstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0118982,
+                    51.0428307
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Herrnhut, Stadt",
+                "desc": "Herrnhut, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7406151,
+                    51.0172494
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hartmannsdorf",
+                "desc": "Hartmannsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8009793,
+                    50.8866383
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Boxberg/O.L.",
+                "desc": "Boxberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5794066,
+                    51.4030465
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Steinberg",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5027, 50.5391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rackwitz",
+                "desc": "Rackwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3770456,
+                    51.4386626
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Olbersdorf",
+                "desc": "Olbersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.769225,
+                    50.8736304
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Naunhof, Stadt",
+                "desc": "Naunhof, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.591803,
+                    51.2787215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gelenau/Erzgeb.",
+                "desc": "Gelenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9683034,
+                    50.7113229
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Flöha, Stadt",
+                "desc": "Flöha, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0716773,
+                    50.855488
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ehrenfriedersdorf, Stadt",
+                "desc": "Ehrenfriedersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9687296,
+                    50.648156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bobritzsch-Hilbersdorf",
+                "desc": "Bobritzsch-Hilbersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4334944,
+                    50.9152729
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Seifhennersdorf, Stadt",
+                "desc": "02782 Seifhennersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6074418,
+                    50.9352877
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pulsnitz, Stadt",
+                "desc": "Pulsnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0154031,
+                    51.1835084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lichtentanne",
+                "desc": "Lichtentanne, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4210908,
+                    50.694222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leutersdorf",
+                "desc": "Leutersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6479619,
+                    50.958861
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Klingenthal, Stadt",
+                "desc": "08248 Klingenthal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4681708,
+                    50.370718
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Glashütte, Stadt",
+                "desc": "01768 Glashütte, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7757788,
+                    50.8507042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geyer, Stadt",
+                "desc": "09468 Geyer, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9238914,
+                    50.6251691
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Demitz-Thumitz",
+                "desc": "Demitz-Thumitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2463968,
+                    51.1419207
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Brandis, Stadt",
+                "desc": "Brandis, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6086017,
+                    51.3329895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reichenbach/O.L., Stadt",
+                "desc": "Reichenbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7749577,
+                    51.1581747
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pockau-Lengefeld, Stadt",
+                "desc": "Pockau-Lengefeld, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2017535,
+                    50.7145074
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ebersbach",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.583333, 51.008333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Düben, Stadt",
+                "desc": "Bad Düben, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5893753,
+                    51.5943957
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Waldhufen",
+                "desc": "Waldhufen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7896669,
+                    51.2418248
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Käbschütztal",
+                "desc": "Käbschütztal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3881755,
+                    51.1570474
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gornau/Erzgeb.",
+                "desc": "Gornau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0350645,
+                    50.7590143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geringswalde, Stadt",
+                "desc": "Geringswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9057216,
+                    51.0777836
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ellefeld",
+                "desc": "Ellefeld, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3860935,
+                    50.4853657
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weinböhla",
+                "desc": "Weinböhla, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5812325,
+                    51.1637004
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tharandt, Stadt",
+                "desc": "Tharandt, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5782358,
+                    50.9866531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schönheide",
+                "desc": "Schönheide, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5265007,
+                    50.5043544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sachsen",
+                "desc": "Saxony, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2017384,
+                    51.1045407
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rothenburg/O.L., Stadt",
+                "desc": "Rothenburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.9665252,
+                    51.3357091
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mildenau",
+                "desc": "Mildenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0717244,
+                    50.5895197
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Malschwitz",
+                "desc": "Malschwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5208636,
+                    51.2374479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Liebschützberg",
+                "desc": "04758 Liebschützberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1469319,
+                    51.3658567
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kirchberg, Stadt",
+                "desc": "Kirchberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5224525,
+                    50.6223188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jahnsdorf/Erzgeb.",
+                "desc": "Jahnsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8544599,
+                    50.7460399
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Haselbachtal",
+                "desc": "Haselbachtal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0327492,
+                    51.240734
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geithain, Stadt",
+                "desc": "Geithain, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6884,
+                    51.05524
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Falkenstein/Vogtl., Stadt",
+                "desc": "Falkenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3649754,
+                    50.4750046
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elstra, Stadt",
+                "desc": "Elstra, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1319618,
+                    51.2224286
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eibenstock, Stadt",
+                "desc": "Eibenstock, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5996393,
+                    50.4949857
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Burkhardtsdorf",
+                "desc": "Burkhardtsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9224922,
+                    50.7344233
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Elster, Stadt",
+                "desc": "Bad Elster, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2324912,
+                    50.2821796
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Amtsberg",
+                "desc": "Amtsberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0108691,
+                    50.7342313
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zwenkau, Stadt",
+                "desc": "Zwenkau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3305257,
+                    51.2166912
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wildenfels, Stadt",
+                "desc": "Wildenfels, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6090297,
+                    50.6662374
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Tirpersdorf",
+                "desc": "Tirpersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2562526,
+                    50.4355599
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thermalbad Wiesenbad",
+                "desc": "Thermalbad Wiesenbad, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0201015,
+                    50.6107239
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oppach",
+                "desc": "Oppach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5050441,
+                    51.0566522
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oderwitz",
+                "desc": "Oderwitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.713586,
+                    50.963206
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niederau",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5549, 51.1761
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Netzschkau, Stadt",
+                "desc": "Netzschkau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2450243,
+                    50.6134993
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lunzenau, Stadt",
+                "desc": "Lunzenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7509711,
+                    50.9623091
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lauta, Stadt",
+                "desc": "Lauta, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1008615,
+                    51.4568295
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Frauenstein, Stadt",
+                "desc": "Frauenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5372312,
+                    50.8012443
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elterlein, Stadt",
+                "desc": "Elterlein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8682031,
+                    50.5771312
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dürrröhrsdorf-Dittersbach",
+                "desc": "Dürrröhrsdorf-Dittersbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9923637,
+                    51.0347551
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bretnig-Hauswalde",
+                "desc": "Bretnig-Hauswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0705956,
+                    51.1506893
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Breitenbrunn/Erzgeb.",
+                "desc": "Breitenbrunn, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7603046,
+                    50.4765374
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Altmittweida",
+                "desc": "Altmittweida, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9509471,
+                    50.9652209
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wermsdorf",
+                "desc": "Wermsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.940642,
+                    51.2803708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stützengrün",
+                "desc": "Stützengrün, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5340589,
+                    50.5319792
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spreetal",
+                "desc": "Spreetal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3379166,
+                    51.5033358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schönau-Berzdorf a. d. Eigen",
+                "desc": "Schönau-Berzdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8815326,
+                    51.0608617
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schmölln-Putzkau",
+                "desc": "Schmölln-Putzkau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2288843,
+                    51.0991169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rodewisch, Stadt",
+                "desc": "Rodewisch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4048621,
+                    50.530873
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pegau, Stadt",
+                "desc": "Pegau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.251699,
+                    51.1671147
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niederwürschnitz",
+                "desc": "Niederwürschnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7552664,
+                    50.7212489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Muldenhammer",
+                "desc": "Muldenhammer, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4642897,
+                    50.4317679
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Machern",
+                "desc": "Machern, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6288822,
+                    51.3585669
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leubsdorf",
+                "desc": "Leubsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1652, 50.7991
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Königswartha",
+                "desc": "Königswartha, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3310113,
+                    51.3107087
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kodersdorf",
+                "desc": "Kodersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8944595,
+                    51.2363664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jesewitz",
+                "desc": "Jesewitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5617809,
+                    51.4225762
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großschönau",
+                "desc": "Großschönau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6629689,
+                    50.8937654
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Erlau",
+                "desc": "Erlau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9436794,
+                    51.0096463
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Burgstädt, Stadt",
+                "desc": "Burgstädt, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8096854,
+                    50.9147844
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Altenberg, Stadt",
+                "desc": "01773 Altenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7578889,
+                    50.7639531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wülknitz",
+                "desc": "Wülknitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3902196,
+                    51.3701062
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schöneck/Vogtl., Stadt",
+                "desc": "Schöneck, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3356774,
+                    50.3936523
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rosenbach",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7319,
+                    51.0783
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neuhausen/Erzgeb.",
+                "desc": "Neuhausen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4691919,
+                    50.6767869
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Königstein/Sächs. Schw., Stadt",
+                "desc": "01824 Königstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.078899,
+                    50.919445
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kubschütz",
+                "desc": "Kubschütz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5066482,
+                    51.164981
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Johanngeorgenstadt, Stadt",
+                "desc": "Johanngeorgenstadt, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7081929,
+                    50.4360485
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gornsdorf",
+                "desc": "Gornsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8839304,
+                    50.7011809
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elsterberg, Stadt",
+                "desc": "Elsterberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.1703135,
+                    50.6096028
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dürrhennersdorf",
+                "desc": "02708 Dürrhennersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6037156,
+                    51.0484376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Doberschütz",
+                "desc": "Doberschütz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7482813,
+                    51.498429
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Diera-Zehren",
+                "desc": "Diera-Zehren, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4060432,
+                    51.1966606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Colditz, Stadt",
+                "desc": "Colditz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8001398,
+                    51.1322353
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Callenberg",
+                "desc": "Callenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6683142,
+                    50.8540526
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Böhlen, Stadt",
+                "desc": "Böhlen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3870379,
+                    51.2006946
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weißenberg, Stadt",
+                "desc": "Weißenberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6604675,
+                    51.1977135
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trossin",
+                "desc": "Trossin, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8228707,
+                    51.6173753
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schöpstal",
+                "desc": "Schöpstal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.9259297,
+                    51.1974273
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rossau",
+                "desc": "Rossau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0705741,
+                    50.9978246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Raschau-Markersbach",
+                "desc": "08352 Raschau-Markersbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8242365,
+                    50.5299188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Radibor",
+                "desc": "Radibor, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3961417,
+                    51.2446549
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pöhl",
+                "desc": "Pöhl, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.1741815,
+                    50.5580136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Obergurig",
+                "desc": "Obergurig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4048035,
+                    51.1407444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niederfrohna",
+                "desc": "Niederfrohna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7378415,
+                    50.883515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niederdorf",
+                "desc": "Niederdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7861111,
+                    50.7266593
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neumark",
+                "desc": "Neumark, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.355937,
+                    50.6603972
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neukirchen/Pleiße",
+                "desc": "Neukirchen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3793863,
+                    50.792803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neukieritzsch",
+                "desc": "Neukieritzsch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.4103385,
+                    51.1499581
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neißeaue",
+                "desc": "Neißeaue, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.0105156,
+                    51.2378693
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Markneukirchen, Stadt",
+                "desc": "Markneukirchen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3281398,
+                    50.3115699
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lohsa",
+                "desc": "02999 Lohsa, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3972107,
+                    51.3942086
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Königswalde",
+                "desc": "Königswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0479228,
+                    50.5492802
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Königsfeld",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7548, 51.0620
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hochkirch",
+                "desc": "Hochkirch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5708606,
+                    51.1492925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hermsdorf/Erzgeb.",
+                "desc": "01776 Hermsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6261429,
+                    50.7646292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hartenstein, Stadt",
+                "desc": "Hartenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6713572,
+                    50.6619388
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hainewalde",
+                "desc": "Hainewalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7044239,
+                    50.9108423
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großolbersdorf",
+                "desc": "Großolbersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0887517,
+                    50.6945838
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Frohburg, Stadt",
+                "desc": "Frohburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5559512,
+                    51.0552726
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eppendorf",
+                "desc": "Eppendorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2290361,
+                    50.7998853
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dorfhain",
+                "desc": "Dorfhain, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5625959,
+                    50.9354563
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dahlen, Stadt",
+                "desc": "04774 Dahlen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9958666,
+                    51.3622295
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Crottendorf",
+                "desc": "Crottendorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.9392722,
+                    50.5118945
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bernsdorf",
+                "desc": "Bernsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0671249,
+                    51.3760276
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Schandau, Stadt",
+                "desc": "Bad Schandau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1535713,
+                    50.9207406
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Augustusburg, Stadt",
+                "desc": "Augustusburg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1022712,
+                    50.8119515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Auerbach",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.913611, 50.686944
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zettlitz",
+                "desc": "Zettlitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8377589,
+                    51.072718
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wiedemar",
+                "desc": "Wiedemar, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2071538,
+                    51.4686867
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weischlitz",
+                "desc": "Weischlitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.0579777,
+                    50.4474917
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Thiendorf",
+                "desc": "Thiendorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.7388356,
+                    51.2974008
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Strehla, Stadt",
+                "desc": "Strehla, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2283384,
+                    51.3507248
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stadt Wehlen, Stadt",
+                "desc": "Stadt Wehlen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0318762,
+                    50.9578001
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Seelitz",
+                "desc": "09306 Seelitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8208608,
+                    51.0311504
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schleife",
+                "desc": "02959 Schleife, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5335676,
+                    51.5434038
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sayda, Stadt",
+                "desc": "Sayda, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4235005,
+                    50.7111036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rietschen",
+                "desc": "Rietschen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7860035,
+                    51.396427
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Remse",
+                "desc": "Remse, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5642842,
+                    50.8554093
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rechenberg-Bienenmühle",
+                "desc": "09623 Rechenberg-Bienenmühle, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.5527818,
+                    50.7357342
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rammenau",
+                "desc": "Rammenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1361724,
+                    51.1521139
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parthenstein",
+                "desc": "04668 Parthenstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6125601,
+                    51.2385202
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Panschwitz-Kuckau",
+                "desc": "Panschwitz-Kuckau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1985174,
+                    51.2341899
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nebelschütz",
+                "desc": "01920 Nebelschütz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1586388,
+                    51.262423
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lossatal",
+                "desc": "04808 Lossatal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8479521,
+                    51.3894031
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kohren-Sahlis, Stadt",
+                "desc": "Kohren-Sahlis, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.606506,
+                    51.0173518
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hohndorf",
+                "desc": "Hohndorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6746346,
+                    50.7414905
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Göda",
+                "desc": "Göda, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3204043,
+                    51.177953
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großweitzschen",
+                "desc": "Großweitzschen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0465046,
+                    51.1581759
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Großharthau",
+                "desc": "Großharthau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.098373,
+                    51.1062269
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gohrisch",
+                "desc": "Gohrisch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1248782,
+                    50.8832199
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elsterheide",
+                "desc": "Elsterheide, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2280364,
+                    51.5055443
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Doberschau-Gaußig",
+                "desc": "Doberschau-Gaußig, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.3971828,
+                    51.1529613
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Claußnitz",
+                "desc": "Claußnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8904354,
+                    50.9408994
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bernstadt a. d. Eigen, Stadt",
+                "desc": "Bernstadt auf dem Eigen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8228423,
+                    51.047156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bennewitz",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7111, 51.3602
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Belgershain",
+                "desc": "Belgershain, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5502669,
+                    51.2354371
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Belgern-Schildau, Stadt",
+                "desc": "Belgern-Schildau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1255073,
+                    51.4823602
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Beiersdorf",
+                "desc": "Beiersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5403853,
+                    51.0747989
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bahretal",
+                "desc": "Bahretal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9138972,
+                    50.8984757
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bad Muskau, Stadt",
+                "desc": "Bad Muskau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7155202,
+                    51.54926
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Zschepplin",
+                "desc": "Zschepplin, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6026904,
+                    51.5028448
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wittichenau, Stadt",
+                "desc": "Wittichenau, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2420858,
+                    51.3829525
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weißenborn/Erzgeb.",
+                "desc": "Weißenborn, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4013826,
+                    50.8721251
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trebsen/Mulde, Stadt",
+                "desc": "Trebsen, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.7582532,
+                    51.2879405
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Theuma",
+                "desc": "Theuma, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2198475,
+                    50.4713393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Striegistal",
+                "desc": "Striegistal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1845226,
+                    50.9874835
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Schönbach",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5679, 51.0618
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reuth",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.9593, 50.4697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reinsberg",
+                "desc": "Reinsberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3728201,
+                    51.0067241
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pausa-Mühltroff, Stadt",
+                "desc": "Pausa-Mühltroff, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.9973162,
+                    50.5829349
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Otterwisch",
+                "desc": "Otterwisch, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.6073602,
+                    51.2042334
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ohorn",
+                "desc": "Ohorn, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0477452,
+                    51.1736263
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Neuensalz",
+                "desc": "Neuensalz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.22419,
+                    50.5037688
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Naundorf",
+                "desc": "Naundorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1087681,
+                    51.2568083
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Müglitztal",
+                "desc": "Müglitztal, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8301106,
+                    50.9191298
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mügeln, Stadt",
+                "desc": "Mügeln, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.045206,
+                    51.2364187
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mulda/Sa.",
+                "desc": "Mulda, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4121873,
+                    50.8083724
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mockrehna",
+                "desc": "Mockrehna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8168837,
+                    51.5077686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Limbach",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.252777777778400,
+                    50.583888888889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Langenweißbach",
+                "desc": "Langenweißbach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5850526,
+                    50.6285496
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lampertswalde",
+                "desc": "01561 Lampertswalde, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6755588,
+                    51.3108889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Kitzscher, Stadt",
+                "desc": "Kitzscher, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5528685,
+                    51.1650888
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jonsdorf, Kurort",
+                "desc": "Jonsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7006303,
+                    50.8546026
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hohnstein, Stadt",
+                "desc": "Hohnstein, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1124691,
+                    50.9788244
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hartmannsdorf b. Kirchberg",
+                "desc": "Hartmannsdorf bei Kirchberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5466141,
+                    50.592761
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gersdorf",
+                "desc": "Gersdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.710033,
+                    50.7584747
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Drebach",
+                "desc": "Drebach, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0199826,
+                    50.6760947
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Dorfchemnitz",
+                "desc": "Dorfchemnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4443708,
+                    50.7648248
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Deutschneudorf",
+                "desc": "Deutschneudorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4643637,
+                    50.6054143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Weißkeißel",
+                "desc": "Weißkeißel, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.7198622,
+                    51.4913957
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Wachau",
+                "desc": ""
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.9057, 51.1588
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Stauchitz",
+                "desc": "Stauchitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2139182,
+                    51.2435447
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reinhardtsdorf-Schöna",
+                "desc": "Reinhardtsdorf-Schöna, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2024274,
+                    50.8885675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Langenbernsdorf",
+                "desc": "Langenbernsdorf, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3211319,
+                    50.7550268
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Elstertrebnitz",
+                "desc": "04523 Elstertrebnitz, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.2375723,
+                    51.14937
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arzberg",
+                "desc": "Arzberg, Germany"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.1258,
+                    51.5287
+                ]
+            }
+        }
+    ]
+}

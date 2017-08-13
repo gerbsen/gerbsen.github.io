@@ -16,6 +16,9 @@
 	<script type="text/javascript" src="bundeslaender.js"></script>
 	<script type="text/javascript" src="lib/papaparse.min.js"></script>
 	<script type="text/javascript" src="lib/choropleth.js"></script>
+	<script src="https://use.fontawesome.com/c6c05a647b.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css">
+	<script src="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>
 	<link rel="stylesheet" href="lib/leaflet.slider.css"/>
 	<script src="lib/leaflet.slider.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
@@ -70,6 +73,7 @@
 
 	var year = 1990;
 	var legend;
+	var map;
 	var geojsonLayer;
 
 	function init() {
@@ -82,7 +86,7 @@
 
 	function initMap() {
 
-		var map = L.map('map').setView([51.1657, 10.4515], 6);
+		map = L.map('map').setView([51.1657, 10.4515], 6);
 
 		L.tileLayer("https://maps.route360.net/styles/positron-gl-style/rendered/{z}/{x}/{y}.png", {
 			maxZoom: 18,
@@ -90,18 +94,35 @@
 			id: 'mapbox.light'
 		}).addTo(map);
 
+		L.easyButton('fa-play', function(btn, map){
+    		var startYear = 1990;
+    		slider.setLogo("Jahr: " + startYear);
+		  	slider.update(startYear);
+			var repeater = setInterval(function () {
+			  if (startYear <= 2014 ) {
+			  	year = Number(startYear) + 1;
+			  	slider.setLogo("Jahr: " + year);
+			  	slider.update(year);
+			    // addGeoJsonToMap(map);
+			    startYear += 1;
+			  } else {
+			    clearInterval(repeater);
+			  }
+			}, 300);
+		}).addTo(map);
+
 		slider = L.control.slider(function(value) {
     			year = value;
-    					
-
-    			addGeoJsonToMap(map);
-			}, {
+    			this._sliderValue.innerHTML = value;
+				addGeoJsonToMap(map);
+			}, 
+		{
     		max: 2015,
     		min: 1990,
     		value: 1990,
     		step: 1,
     		showValue : true,
-    		syncSlider: true,
+    		// syncSlider: true,
     		logo : "Jahr: " + year,
     		size: '250px',
     		orientation:'horizontal',
@@ -110,10 +131,12 @@
 
 		map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
-		addGeoJsonToMap(map);
+		addGeoJsonToMap(map);		
 	}
 
 	function addGeoJsonToMap(map) {
+
+		console.log("Redraw for year: " + year)
 
 		if (map.hasLayer(geojsonLayer)) 
 			map.removeLayer(geojsonLayer);
@@ -193,7 +216,6 @@
 
 		data.cdu_bundesländer.elements.forEach(function(membersPerYear){
 
-			// console.log(membersPerYear)
 			for (var key in membersPerYear) {
 			  	if ( key.match("[0-9]{4}") ) {
 
@@ -202,17 +224,10 @@
 			  		if ( isNaN(stateGeoJson.properties[key]) )
 			  			stateGeoJson.properties[key] = null;
 			  	}
-			  	// console.log(stateGeoJson)
 			}
 		})
 
 		initMap();
-
-		// statesData.features.forEach(function(stateFeature){
-
-		// 	if ( stateFeature.properties.id == bundesland.id )
-		// 		console.log();
-		// })
 	}
 
 </script>

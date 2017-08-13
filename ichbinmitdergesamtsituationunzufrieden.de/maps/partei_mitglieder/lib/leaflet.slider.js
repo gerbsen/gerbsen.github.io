@@ -1,5 +1,7 @@
 L.Control.Slider = L.Control.extend({
     update: function(value){
+        
+
         return value;
     },
 

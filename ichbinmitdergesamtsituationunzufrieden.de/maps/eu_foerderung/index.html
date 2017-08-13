@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>WMS example - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="staedte-geocoded.geojson"></script>
+    <script src="geostats.min.js"></script>
+    <script src="accounting.min.js"></script>
+    <script src="2017-06-30_Liste_der_Vorhaben_ESF_SN_2014-2020.json"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.10/chance.min.js"></script>
+
+	<style>
+		html, body, #map {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script type="text/javascript">
+	
+	var map = L.map('map', {
+		center: [51.1043, 13.2017],
+		zoom: 8
+	});
+
+	L.tileLayer("https://maps.route360.net/styles/positron-gl-style/rendered/{z}/{x}/{y}.png", {
+		maxZoom: 18,
+		attribution: '<a href=\"http://openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"http://www.openstreetmap.org/about/\" target=\"_blank\">&copy; OpenStreetMap contributors</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+	var values = [];
+
+	staedte.features.filter(stadt => stadt.properties.name != "Sachsen").forEach(function(stadt){
+
+		stadt.foerdersumme = 0;
+
+		alleVorhaben.forEach(function(vorhaben){
+
+			if ( vorhaben['Durchführungsort des Vorhabens'] == stadt.properties.name ) {
+
+				var money = vorhaben['Gesamtbetrag der förderfähigen Ausgaben des Vorhabens']
+					.replace(".", "").replace(",", ".")
+				stadt.foerdersumme += parseFloat(money);
+			}
+		});
+
+		// make sure we have a money value for all cities
+		if ( stadt.foerdersumme == 0 )
+			console.log(stadt.properties.name + " --> " + stadt.foerdersumme);
+		else 
+			values.push(stadt.foerdersumme);
+	});
+
+	var series = new geostats(values);
+	// we need this to be at least 10
+	// otherwise Dresden is larger then max and will not be displayed
+   	series.setPrecision(10); 
+
+	console.log("min:      " + series.min());
+	console.log("max:      " + series.max());
+	console.log("sum:      " + series.sum());
+	console.log("pop:      " + series.pop());
+	console.log("mean:     " + series.mean());
+	console.log("median:   " + series.median());
+	console.log("variance: " + series.variance());
+	console.log("stddev:   " + series.stddev());
+	console.log("cov:      " + series.cov());
+	console.log("-------------------------------");
+   	var jenks = series.getClassJenks(25);
+
+   	L.geoJSON(staedte, {
+   		filter : function(feature) {
+   			// there is some strange data inside the csv, only for "Sachsen" and no money given
+		  	return feature.properties.name != "Sachsen";
+		},
+	    pointToLayer: function (feature, latlng) {
+
+	    	var geojsonMarkerOptions = {
+			    radius: series.getRangeNum(feature.foerdersumme) + 5,
+			    fillColor: "#ff7800",
+			    color: "#000",
+			    weight: 1,
+			    opacity: 1,
+			    fillOpacity: 0.8
+			};
+
+			return L.circleMarker(latlng, geojsonMarkerOptions);
+	    },
+	    onEachFeature : function onEachFeature(feature, layer) {
+
+	        layer.bindPopup("<h3>" + feature.properties.name + "</h3> \
+	        	<p>Fördersumme: " + accounting.formatMoney(feature.foerdersumme, "€", 2, ".", ",") + "€ </p> \
+	        	<p>Gesamtförderung: " + accounting.formatMoney(series.sum(), "€", 2, ".", ",") + "€ </p>");
+		}
+	}).addTo(map);
+
+</script>
+
+
+
+</body>
+</html>
+
