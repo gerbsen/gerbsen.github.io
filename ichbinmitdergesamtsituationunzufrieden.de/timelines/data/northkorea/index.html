@@ -20,15 +20,15 @@
         margin: 0px;
       }
       .tl-timeline {
-        
+
       }
       /*https://timeline.knightlab.com/docs/json-format.html*/
-      
+
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML elements-->
     <!--if lt IE 9
     script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
-    
+
     -->
   </head>
   <body>
@@ -37,10 +37,10 @@
     <script src="timeline.js"></script>
     <script src="data.js"></script>
     <script>
-      
+
       data.events.forEach(function(event) {
 
-        if (!('text' in event.text)) 
+        if (!('text' in event.text))
           event.text.text = "<br>";
         else
           event.text.text += "<br><br>";
@@ -51,7 +51,8 @@
       });
 
       var google = { ga_property_id: "UA-27829802-4" };
-      var timeline = new TL.Timeline('timeline', data);
+    //   var timeline = new TL.Timeline('timeline', data);
+      var timeline = new TL.Timeline('timeline', 'https://docs.google.com/spreadsheets/d/1hyTk3tl7wukmu1vJXhi30lGc6fsnto2U9hw8uxA2QBs/pubhtml');
     </script>
   </body>
 </html>
